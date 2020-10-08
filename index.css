@@ -1,0 +1,261 @@
+@font-face {
+  font-family: Sigmar One;
+  src: url(./fonts/Sigmar_One/SigmarOne-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  src: url(./fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  src: url(./fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: italic;
+  src: url(./fonts/Poppins/Poppins-Italic.ttf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  position: absolute;
+  top: 0;
+  left: 1vw;
+  right: 0;
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6vw;
+  z-index: 3;
+  text-align: left;
+  color: #f5a623;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+.yeah {
+  position: absolute;
+  right: 35px;
+  bottom: -2.1vw;
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6vw;
+  text-align: right;
+  color: #ffffff;
+  transform: rotate(5deg);
+}
+.container {
+  background-color: #f5a623;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-triangle {
+  border-top: 13vw solid #ffffff;
+  border-right: 110vw solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0;
+}
+.bottom-triangle {
+  height: 0;
+  width: 0;
+  top: calc(100vh - 7vw);
+  border-bottom: 7vw solid #ffffff;
+  border-right: 100vw solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.starter-container {
+  width: 100%;
+  position: absolute;
+  top: 11vw;
+}
+.box {
+  position: relative;
+  width: 30vw;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 24px 24px 100px 100px;
+  margin: 0 auto;
+}
+.starters {
+  position: relative;
+  right: 0;
+  bottom: 3.5vw;
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3vw;
+  text-align: right;
+  color: #ffffff;
+}
+.box-title {
+  position: absolute;
+  height: 21px;
+  left: 3.26%;
+  right: 74.49%;
+  top: calc(50% - 6.8rem / 2 + 3px);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #1f1e1d;
+  width: 100%;
+}
+.box-p {
+  position: absolute;
+  height: 43px;
+  left: 7.34%;
+  right: 6.48%;
+  top: calc(50% - 7.8rem / 2 + 37px);
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 13px;
+  color: #1f1e1d;
+}
+/* Pokemon List */
+.column {
+  float: left;
+  padding: 15px 0;
+}
+.up {
+  position: relative;
+  bottom: 3rem;
+  padding-top: 36px;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.pokemon-list {
+  height: calc(90vh - (11vw + 150px));
+  margin: 0 auto;
+  position: absolute;
+  top: calc(11vw + 150px);
+  overflow: scroll;
+}
+.pokemon-container {
+  text-align: center;
+  width: 11vw;
+}
+.pokemon-number {
+  font-family: 'Sigmar One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.075px;
+  color: #ffffff;
+}
+.pokemon-image-border {
+  width: 6vw;
+  height: 6vw;
+  border: 0.4rem dashed #1f1e1d;
+  border-radius: 4vw;
+  text-align: center;
+  margin: 0 auto;
+}
+.pokemon-image-container {
+  width: 5.9vw;
+  height: 5.9vw;
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4vw;
+  position: relative;
+}
+.pokemon-image {
+  position: relative;
+  width: 4vw;
+  height: 5.5vw;
+}
+.pokemon-title {
+  margin-top: 11px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05px;
+  color: #ffffff;
+}
+.pokemon-p {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.0375px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .starter-container {
+    top: 13vw;
+  }
+  .box {
+    width: 40vw;
+    height: 90px;
+  }
+  .pokemon-container {
+    width: 15vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .starter-container {
+    top: 14vw;
+  }
+  .box {
+    width: 52vw;
+    height: 80px;
+  }
+  .box-title {
+    font-size: 12px;
+  }
+  .box-p {
+    font-size: 11px;
+  }
+  .pokemon-container {
+    width: 17vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .starter-container {
+    top: 15vw;
+  }
+  .box {
+    width: 68vw;
+  }
+}
